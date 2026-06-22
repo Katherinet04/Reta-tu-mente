@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    font-family:'Comic Sans MS';
+    background:linear-gradient(
+    #7dd3fc,
+    #38bdf8
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contenedor{
+    background:white;
+    padding:35px;
+    width:450px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    z-index:2;
+}
+
+.robot{
+    font-size:120px;
+    animation:flotar 2s infinite alternate;
+}
+
+@keyframes flotar{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-20px);
+    }
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    border-radius:15px;
+    border:3px solid #60a5fa;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:none;
+    border-radius:15px;
+    background:#ff6b6b;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    animation:rebote 1s infinite;
+}
+
+@keyframes rebote{
+    50%{
+        transform:scale(1.05);
+    }
+}
+
+.nube{
+    position:absolute;
+    background:white;
+    border-radius:50px;
+    opacity:.8;
+}
+
+.nube1{
+    width:120px;
+    height:60px;
+    top:80px;
+    left:-150px;
+    animation:mover 20s linear infinite;
+}
+
+.nube2{
+    width:180px;
+    height:80px;
+    top:180px;
+    left:-200px;
+    animation:mover 30s linear infinite;
+}
+
+@keyframes mover{
+    from{
+        left:-250px;
+    }
+    to{
+        left:110%;
+    }
+}

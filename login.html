@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aventura Infantil</title>
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+
+  <body>
+
+<div class="estrellas">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+<div class="contenedor">
+
+<h1>Elige tu compañero</h1>
+
+<div class="mascotaZona">
+  <div id="mascota">🤖</div>
+  <div id="mensaje">...</div>
+</div>
+
+<div class="opcionesMascota">
+
+<button type="button"
+onclick="cambiarMascota('🤖','¡Soy Robot!')">
+🤖
+</button>
+
+<button type="button"
+onclick="cambiarMascota('🐱','¡Miau! Soy tu amigo gato')">
+🐱
+</button>
+
+<button type="button"
+onclick="cambiarMascota('🦉','¡Soy un búho muy inteligente!')">
+🦉
+</button>
+
+<button type="button"
+onclick="cambiarMascota('🧠','¡Tengo muchas ideas para jugar!')">
+🧠
+</button>
+
+<button type="button"
+onclick="cambiarMascota('👸','¡Bienvenido al reino mágico!')">
+👸
+</button>
+
+<button type="button"
+onclick="cambiarMascota('🦖','¡Vamos a una aventura jurásica!')">
+🦖
+</button>
+
+</div>
+
+<form action="guardar.php" method="POST">
+
+<input type="hidden" name="mascota" id="mascotaSeleccionada" value="🤖">
+
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+
+<input type="number" name="edad" placeholder="Tu edad" required>
+
+<select name="grado" required>
+<option value="">Selecciona tu grado</option>
+<option>Primero</option>
+<option>Segundo</option>
+<option>Tercero</option>
+<option>Cuarto</option>
+<option>Quinto</option>
+<option>Sexto</option>
+<option>Séptimo</option>
+<option>Octavo</option>
+<option>Noveno</option>
+<option>Décimo</option>
+<option>Undécimo</option>
+</select>
+
+
+
+<button class="empezar">
+Iniciar
+</button>
+
+</form>
+
+</div>
+<script src="mascota.js?v=123"></script>
+</body>
+</html>

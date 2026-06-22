@@ -1,0 +1,105 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #5f0a87, #a4508b, #ff4d6d);
+    overflow:hidden;
+    color:white;
+}
+
+/* contenedor */
+.contenedor{
+    text-align:center;
+    width:100%;
+}
+
+/* tarjeta glass */
+.card{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius:25px;
+    padding:40px 25px;
+    width:90%;
+    max-width:450px;
+    margin:auto;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    border:1px solid rgba(255,255,255,0.2);
+    animation: aparecer 0.8s ease;
+}
+
+/* icono trofeo */
+.icono{
+    font-size:4rem;
+    margin-bottom:10px;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+/* títulos */
+h1{
+    font-size:2.5rem;
+    margin:10px 0;
+    letter-spacing:2px;
+}
+
+h2{
+    font-size:1.2rem;
+    font-weight:normal;
+    opacity:0.9;
+}
+
+.texto{
+    margin-top:15px;
+    opacity:0.85;
+}
+
+/* botones */
+.botones{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:25px;
+}
+
+.btn,.btn2{
+    padding:14px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+    font-size:1rem;
+}
+
+.btn{
+    background:#00e676;
+    color:black;
+}
+
+.btn2{
+    background:white;
+    color:black;
+}
+
+.btn:hover,.btn2:hover{
+    transform:scale(1.05);
+}
+
+/* animaciones */
+@keyframes flotar{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+@keyframes aparecer{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}

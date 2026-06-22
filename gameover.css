@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.game-over {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.retry-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: rgb(112, 245, 119);
+    background-color: transparent;
+    border: 2px solid rgb(167, 255, 127);
+    border-radius: 10px;
+    cursor: pointer;
+}
+

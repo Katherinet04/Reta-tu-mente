@@ -1,0 +1,258 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Trebuchet MS", sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#7b2cbf,#c77dff,#ff8fab);
+min-height:100vh;
+overflow:hidden;
+}
+
+/* ================= NAVBAR TRANSPARENTE ================= */
+
+#navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:60px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 15px;
+
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(10px);
+
+color:white;
+z-index:1000;
+}
+
+/* VIDAS */
+#vidas{
+font-size:18px;
+letter-spacing:2px;
+min-width:120px;
+}
+
+/* PROGRESO */
+.progreso-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+width:120px;
+gap:3px;
+}
+
+.nivelTexto{
+font-size:11px;
+opacity:0.8;
+}
+
+.barra{
+width:100%;
+height:5px;
+background:#333;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progreso{
+height:100%;
+width:85%;
+background:linear-gradient(90deg,#4caf50,#8bc34a);
+transition:0.5s;
+}
+
+/* PUNTOS */
+#puntos{
+font-size:16px;
+font-weight:bold;
+}
+
+/* AUDIO BUTTON */
+#audio-control{
+cursor:pointer;
+font-size:18px;
+transition:0.2s;
+}
+
+#audio-control:hover{
+transform:scale(1.2);
+}
+
+/* ================= JUEGO CENTRADO ================= */
+
+#juego{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+text-align:center;
+padding-top:60px;
+}
+
+/* RECUADRO CENTRAL */
+.card-juego{
+background:rgba(255,255,255,0.92);
+padding:30px;
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+
+width:90%;
+max-width:400px;
+
+backdrop-filter:blur(6px);
+}
+
+.card-juego h1{
+font-size:24px;
+margin-bottom:10px;
+color:#5a189a;
+}
+
+.card-juego p{
+margin-bottom:10px;
+}
+
+/* INPUT CENTRADO */
+input{
+width:120px;
+padding:10px;
+border-radius:10px;
+border:none;
+text-align:center;
+font-size:18px;
+outline:none;
+margin-top:10px;
+}
+
+/* BOTÓN */
+button{
+margin-top:10px;
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:#ff4fa3;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.2s;
+position: center;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* PISTA Y RESULTADO */
+#pista, #resultado{
+margin-top:15px;
+min-height:25px;
+font-weight:bold;
+font-size:16px;
+}
+.mascota{
+position:fixed;
+bottom:10px;
+left:10px;
+
+display:flex;
+align-items:flex-end;
+gap:10px;
+
+z-index:1000;
+}
+
+.mascota{
+position:fixed;
+bottom:10px;
+left:10px;
+
+display:flex;
+align-items:flex-end;
+gap:10px;
+
+z-index:1000;
+}
+
+/* mascota */
+.emoji{
+font-size:75px;
+}
+
+/* 🔥 BURBUJA BIEN PROPORCIONADA */
+.burbuja{
+position:absolute;
+left:90px;
+bottom:60px;
+
+background:white;
+color:black;
+
+padding:12px 16px;
+border-radius:18px;
+
+font-size:14px;
+
+/* 🔥 CLAVE REAL */
+max-width:320px;
+min-width:120px;
+
+/* evita texto en columna exagerada */
+white-space:normal;
+word-break:normal;
+overflow-wrap:break-word;
+
+/* mantiene forma bonita */
+line-height:1.3;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+display:none;
+
+z-index:1001;
+text-align: center;
+}
+
+/* mostrar burbuja */
+.mostrar{
+display:block;
+}
+
+/* animación mascota */
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-5px);}
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.card-juego{
+padding:20px;
+}
+
+.card-juego h1{
+font-size:20px;
+}
+
+input{
+width:100px;
+}
+
+.emoji{
+font-size:45px;
+}
+
+#navbar{
+font-size:13px;
+}
+}

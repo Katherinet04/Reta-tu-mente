@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivel 2</title>
+<link rel="stylesheet" href="numero2.css">
+</head>
+<body>
+  <audio id="background-audio" src="audio/game-music-loop-6-144641.mp3" autoplay loop></audio> 
+  <header>
+    <nav>
+      <span id="score">Puntos: 0</span>
+      <div id="lives"></div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Adivina el Número</h1>
+    <p>Introduce un número entre 1 y 100:</p>
+    <input type="number" id="guessInput" min="1" max="50">
+    <button onclick="checkGuess()">Adivinar</button>
+    <p id="hint"></p>
+    <p id="result"></p>
+  </div>
+
+  <footer>
+    <p id="footerMessage">¡Buena suerte!</p>
+  </footer>
+
+  <script src="numero2.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+.mascotaZona{
+
+position:fixed;
+
+left:15px;
+
+bottom:15px;
+
+display:flex;
+
+align-items:flex-end;
+
+gap:10px;
+
+z-index:9999;
+
+}
+
+#mascota{
+
+font-size:65px;
+
+animation:flotar 2s infinite;
+
+}
+
+.burbuja{
+
+background:white;
+
+padding:10px;
+
+border-radius:15px;
+
+font-size:12px;
+
+width:180px;
+
+line-height:18px;
+
+box-shadow:0 0 15px rgba(0,0,0,.2);
+
+position:relative;
+
+animation:hablar 2s infinite;
+
+}
+
+
+
+@keyframes hablar{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes flotar{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+#mensaje{
+
+    opacity:0;
+
+    transition:.4s;
+
+    background:white;
+
+    padding:10px 15px;
+
+    border-radius:15px;
+
+    margin-top:10px;
+
+    max-width:220px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+
+}
+
+#mensaje.mostrar{
+
+    opacity:1;
+
+}

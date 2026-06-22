@@ -1,0 +1,267 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Comic Sans MS',sans-serif;
+
+height:100vh;
+overflow:hidden;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(
+135deg,
+#5a189a,
+#9d4edd,
+#ff4d9d
+);
+
+position:relative;
+}
+
+/* ESTRELLAS */
+
+.estrellas span{
+
+position:absolute;
+
+width:6px;
+height:6px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:0 0 10px white;
+
+animation:subir 15s linear infinite;
+}
+
+.estrellas span:nth-child(1){
+left:10%;
+animation-delay:0s;
+}
+
+.estrellas span:nth-child(2){
+left:20%;
+animation-delay:2s;
+}
+
+.estrellas span:nth-child(3){
+left:35%;
+animation-delay:5s;
+}
+
+.estrellas span:nth-child(4){
+left:50%;
+animation-delay:1s;
+}
+
+.estrellas span:nth-child(5){
+left:65%;
+animation-delay:7s;
+}
+
+.estrellas span:nth-child(6){
+left:75%;
+animation-delay:4s;
+}
+
+.estrellas span:nth-child(7){
+left:85%;
+animation-delay:8s;
+}
+
+.estrellas span:nth-child(8){
+left:95%;
+animation-delay:3s;
+}
+
+@keyframes subir{
+
+0%{
+bottom:-10px;
+opacity:0;
+transform:translateX(0);
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+bottom:110%;
+opacity:0;
+transform:translateX(-20px);
+}
+
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+
+width:480px;
+
+padding:30px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,0.15);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.3);
+
+box-shadow:0 0 40px rgba(0,0,0,.25);
+
+text-align:center;
+
+z-index:10;
+}
+
+h1{
+
+color:white;
+
+margin-bottom:10px;
+
+text-shadow:0 0 15px rgba(255,255,255,.5);
+}
+
+/* MASCOTA */
+
+.mascota{
+
+font-size:120px;
+
+animation:flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-18px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+#mensaje{
+
+color:white;
+
+font-size:18px;
+
+margin-bottom:15px;
+}
+
+/* BOTONES MASCOTA */
+
+.opcionesMascota{
+
+margin-bottom:15px;
+}
+
+.opcionesMascota button{
+
+font-size:32px;
+
+background:rgba(255,255,255,.2);
+
+border:none;
+
+border-radius:15px;
+
+padding:8px;
+
+margin:4px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.opcionesMascota button:hover{
+
+transform:scale(1.25);
+
+background:white;
+}
+
+/* INPUTS */
+
+input,
+select{
+
+width:100%;
+
+padding:14px;
+
+margin-top:10px;
+
+border:none;
+
+border-radius:15px;
+
+font-size:15px;
+
+outline:none;
+}
+
+input:focus,
+select:focus{
+
+box-shadow:0 0 15px #ff9ecf;
+}
+
+/* BOTON */
+
+.empezar{
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+background:linear-gradient(
+90deg,
+#ff4d9d,
+#ff85c1
+);
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.empezar:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px #ff85c1;
+}

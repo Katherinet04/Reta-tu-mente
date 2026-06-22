@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 5px solid black;
+    /* Margen negra al contenedor */
+    background-color: #222;
+    /* Fondo oscuro para contraste */
+    border-radius: 15px;
+    /* Bordes redondeados */
+}
+
+.game-over {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.retry-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.retry-button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}

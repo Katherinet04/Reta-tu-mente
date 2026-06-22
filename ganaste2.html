@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntaje Final</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('images/WhatsApp\ Image\ 2024-09-26\ at\ 5.46.40\ PM.jpeg'); /* Reemplaza con la ruta de tu imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px 30px; /* Ajustamos el padding para una margen más delgada */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            margin: 20px; /* Añadimos un margen delgado */
+        }
+        .container h2 {
+            color: rgb(17, 16, 16);
+            margin-bottom: 20px;
+        }
+        .container p {
+            color: rgb(26, 25, 25);
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        #nextLevel {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #92e9ac;
+            color: rgb(15, 15, 15);
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: none;
+        }
+        #nextLevel:hover {
+            background-color: #70d867;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Puntaje Final</h2>
+        <p id="message"></p>
+        <button id="nextLevel" onclick="goToNextLevel()">Game Over</button>
+    </div>
+
+    <!-- Agregamos los audios de ganar y perder -->
+    <audio id="win-sound" src="audio/wingrandpiano-96338.mp3"></audio>
+    <audio id="lose-sound" src="audio/game-over-arcade-6435.mp3"></audio>
+
+    <script src="ganaste2.js"></script>
+</body>
+</html>
